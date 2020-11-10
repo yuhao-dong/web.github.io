@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yuhao's Web - Skills</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* 
+        Tooltip
+        */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head> 
+
+<body style="font-family: verdana;">
+    <div class="sidenav center navfont">
+        <img src="../assets/img/me.jpg" class="rounded photo">
+        <br>
+        <br>
+        <a href="../index.html">Home</a>
+        <a href="Education.html">Education</a>
+        <a href="Research.html">Research</a>
+        <a href="Jobs.html">Jobs</a>
+        <div style="background-color: gainsboro;"><a href="Skills.html">Skills</a></div>
+        <a href="Habits.html">Habits</a>
+    </div>
+
+    <div class="main">
+        <div class="center educationfont eduspace"><b>Skills</b></div>
+        <br>
+        <br>
+        <hr>
+        <div style="text-align: center; margin-top: 20px">
+            <div class="tooltip">
+                <img src="https://img.icons8.com/color/144/000000/html-5.png"/>
+                <span class="tooltiptext">html 5</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/color/144/000000/css3.png"/>
+                <span class="tooltiptext">CSS 3</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/color/144/000000/solidworks.png"/>
+                <span class="tooltiptext">SolidWorks</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/nolan/128/matlab.png" style="width:144px">
+                <span class="tooltiptext">Matlab</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/fluent/144/000000/visual-studio-2019.png"/>
+                <span class="tooltiptext">Visual Studio</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/color/144/000000/c-plus-plus-logo.png"/>
+                <span class="tooltiptext">C++</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/color/144/000000/office-365.png"/>
+                <span class="tooltiptext">Microsoft Office</span>
+            </div>
+            <div class="tooltip">
+                <img src="https://img.icons8.com/dusk/128/000000/cnc-machine.png" style="width:144px">
+                <span class="tooltiptext">CNC Machine</span>
+            </div>
+        </div>
+        
+
+    </div>
+</body>  
+</html>

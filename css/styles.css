@@ -1,0 +1,513 @@
+/* General left side navigation */
+.sidenav{
+    height:100%;
+    width:300px;                                                    /* 300 px for the width */
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:antiquewhite;                                  /*Navigation background color */
+    overflow-x:hidden;
+    padding-top: 20px; /*How far from the top, including the profile pic */    
+}
+        
+.sidenav a{                                                         /*Navigation font etc, home,education...*/
+    padding: 15px;
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    display: block;
+}
+        
+.sidenav a:hover{                                                   /*Navigation font etc, home,education...*/
+    color:darkblue;
+    background-color: burlywood;
+}
+
+.photo{
+    width:50%                                                       /* for Navigation Photo */
+}
+
+.infofont{
+    font-size:130%;                                                 /* FOR PHONE # and EMAIL ADDRESS*/
+}
+
+.descriptionfont{                                                   /* For Home Page Description */
+    font-size:160%;
+    margin-left: 5%; 
+    margin-right:5%;
+    line-height: 1.6;
+}
+
+.infomargin{
+    margin-bottom: -0.5%;
+}
+
+.name{
+    font-size:400%;
+    font-family: Impact, Charcoal, sans-serif;                      /* Main Section header name "YUHAO DONG"*/
+}
+
+/* General Main Section */
+.main{
+    margin-left:300px;              /*Should be same as the width above */
+    margin-top:80px;
+}
+
+/* NOT FOR TABLETS NOR MOBILE, BUT WINDOW SIZE */
+@media only screen and (max-width:1200px){
+    .infofont{                                             /* FOR PHONE # and EMAIL ADDRESS*/
+        font-size:100%;
+    }
+    .main{
+        margin-left:250px;                                          /*Reduced to 200px */
+        margin-top:60px;
+    }
+    .sidenav{
+        height:100%;
+        width:250px;                                                    /* 300 px for the width */
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:antiquewhite;                                  /*Navigation background color */
+        overflow-x:hidden;
+        padding-top: 20px;
+    }
+    .descriptionfont{                                                   /* For Home Page Description */
+        font-size:130%;
+    }
+
+    .infomargin{
+        margin-bottom: -1.5%;
+    }
+    .name{
+        font-size:320%;
+        font-family: Impact, Charcoal, sans-serif;                      /* Main Section header name "YUHAO DONG"*/
+    }
+}
+
+/* For Tablets */
+@media only screen and (max-width:850px){
+    .main{
+        margin-left:200px;                                          /*Reduced to 200px */
+        margin-top:50px;
+    }
+    .sidenav{
+        height:100%;
+        width:200px;                                                    /* 300 px for the width */
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:antiquewhite;                                  /*Navigation background color */
+        overflow-x:hidden;
+        padding-top: 20px;
+    }
+    .sidenav a{                                                         /*Navigation font etc, home,education...*/
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+    }
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width:500px){
+    .main{
+        margin-left:0px;                                          /* Full Screen */
+        margin-top:10px;
+    }
+    .sidenav{                                                      /*MIGHT NEED TO FIX LATER!!!!! */
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    .sidenav a{                                                    /*MIGHT NEED TO FIX LATER!!!!! */            
+        padding: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+    }
+    .photo{
+        width:20%;
+        margin-bottom: -5%;
+    }
+    .infofont{
+        font-size:80%;                                                 /* FOR PHONE # and EMAIL ADDRESS*/
+    }
+    .infomargin{
+        margin-bottom: -4%;
+    }
+    .name{
+        font-size:250%;
+        font-family: Impact, Charcoal, sans-serif;                      /* Main Section header name "YUHAO DONG"*/
+    }
+    .namemargin{
+        margin-top: -1%;
+        margin-bottom: -0%;
+    }
+}
+
+/* Other CSS Styles */
+.center{
+    text-align:center;
+}
+
+.navfont{
+   font-family: "Comic Sans MS", cursive, sans-serif;                /* Navigation Manu Font */ 
+}
+
+.rounded{
+    border-radius:50%;
+    border:8px solid lightgray;                                     /* for Navigation manu picture */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR EDUCATION PAGE*/
+
+.fontweight1{
+            font-weight:600
+        }
+.educationfont{
+    font-size: 350%;
+    margin-top: 50px;
+    margin-bottom: 0px
+}
+
+.termfont{
+    margin-top:7px;
+    font-size:100%;
+    color:#E3242B;
+}
+.schoolfont{
+    font-size: 140%;
+}
+.degreefont{
+    font-size: 100%;
+    color:darkgray;
+}
+
+.tablink {
+    background-color: #555;                                          /* for full page tab*/
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;                                          /* for full page tab*/
+}
+        
+.tabcontent {
+    color: black;                                                    /* for full page content*/
+    display: none;
+    padding: 100px 20px;                                            /* for full page tab*/
+    height: 100%;
+}
+        
+        
+#Home {background-color: white;}
+#News {background-color: white;}
+#Contact {background-color: white;}
+#About {background-color: white;}
+
+
+
+/* NOT FOR TABLETS NOR MOBILE, BUT WINDOW SIZE */
+@media only screen and (max-width:1200px){
+    .educationfont{
+        font-size: 300%;
+        margin-top: 30px;
+        margin-bottom: 0px
+    }
+    .termfont{
+        margin-top:7px;
+        font-size:90%;
+    }
+    .schoolfont{
+        font-size: 115%;
+    }
+}
+
+
+/* For Tablets */
+@media only screen and (max-width:850px){
+    .educationfont{
+        font-size: 250%;
+        margin-top: 30px;
+        margin-bottom: 0px
+    }
+    .termfont{
+        margin-top:7px;
+        font-size:80%;
+    }
+    .schoolfont{
+        font-size: 110%;
+    }
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width:500px){
+    .educationfont{
+        font-size: 230%;
+        margin-top: 0px;
+        margin-bottom: 0px
+    }
+    .termfont{
+        margin-top:1px;
+        font-size:70%;
+    }
+    .schoolfont{
+        font-size: 90%;
+    }
+    .tablink{
+        font-size:13px;
+    }
+    .eduspace{
+        margin-bottom:-5%;
+    }
+    .degreefont{
+        font-size: 70%;
+        color:darkgray;
+    }
+    .fontweight1{
+        font-weight:500
+    }
+}        
+        
+        /*
+        Below are for the Research Gallery
+        */
+        
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.responsive {
+    padding: 5px;
+    float: left;
+    width: 45%;
+    margin:1%;
+}
+
+        
+        
+@media only screen and (max-width: 1100px) {
+    .responsive {
+        width: 45%;
+        margin: 6px;
+    }
+}
+        
+@media only screen and (max-width: 750px) {
+    .responsive {
+        width: 95%;
+    }
+}
+        
+        /*
+        Accordion
+        */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    /* padding: 0 18px; */
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+        
+
+        
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+        
+
+.margin_1{
+    margin-left: 25%;
+    margin-right:25%;
+}
+        
+@media only screen and (max-width: 1300px) {
+    .margin_1 {
+        margin-left:10%;
+        margin-right: 10%;
+    }
+}
+        
+        
+        
+
+
+
+
+
+
+
+
+
+/*FOR RESEARCH PAGE*/
+.schoolfont2{
+    font-size: 130%;
+}
+
+.researchfont{
+    font-size: 130%;
+}
+
+
+/* NOT FOR TABLETS NOR MOBILE, BUT WINDOW SIZE */
+@media only screen and (max-width:1300px){
+    .schoolfont2{
+        font-size: 120%;
+    }
+    .researchfont{
+        font-size: 120%;
+    }
+}
+
+/* For Tablets */
+@media only screen and (max-width:950px){
+    .schoolfont2{
+        font-size: 100%;
+    }
+    .researchfont{
+        font-size: 100%;
+    }
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width:500px){
+    .schoolfont2{
+        font-size: 80%;
+    }
+    .researchfont{
+        font-size: 80%;
+    }
+}

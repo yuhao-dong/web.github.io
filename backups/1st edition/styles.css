@@ -1,0 +1,110 @@
+/* General left side navigation */
+.sidenav{
+    height:100%;
+    width:300px;                                                    /* 300 px for the width */
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:antiquewhite;                                  /*Navigation background color */
+    overflow-x:hidden;
+    padding-top: 20px; /*How far from the top, including the profile pic */    
+}
+        
+.sidenav a{                                                         /*Navigation font etc, home,education...*/
+    padding: 15px;
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    display: block;
+}
+        
+.sidenav a:hover{                                                   /*Navigation font etc, home,education...*/
+    color:darkblue;
+    background-color: burlywood;
+}
+
+.photo{
+    width:50%                                                       /* for Navigation Photo */
+}
+
+/* General Main Section */
+.main{
+    margin-left:300px;              /*Should be same as the width above */
+    margin-top:100px;
+    text-align: center;
+}
+
+/* For Tablets */
+@media only screen and (max-width:800px){
+    .main{
+        margin-left:200px;                                          /*Reduced to 200px */
+        margin-top:50px;
+        text-align: center;
+    }
+    .sidenav{
+        height:100%;
+        width:200px;                                                    /* 300 px for the width */
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:antiquewhite;                                  /*Navigation background color */
+        overflow-x:hidden;
+        padding-top: 20px;
+    }
+    .sidenav a{                                                         /*Navigation font etc, home,education...*/
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+    }
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width:500px){
+    .main{
+        margin-left:0px;                                          /* Full Screen */
+        margin-top:10px;
+        text-align: center;
+    }
+    .sidenav{                                                      /*MIGHT NEED TO FIX LATER!!!!! */
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    .sidenav a{                                                    /*MIGHT NEED TO FIX LATER!!!!! */            
+        padding: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+    }
+    .photo{
+        width:20%;
+        margin-bottom: -5%;
+    }
+}
+
+/* Other CSS Styles */
+.center{
+    text-align:center;
+}
+
+.navfont{
+   font-family: "Comic Sans MS", cursive, sans-serif;                /* Navigation Manu Font */ 
+}
+
+.rounded{
+    border-radius:50%;
+    border:8px solid lightgray;                                     /* for Navigation manu picture */
+}
+
+.name{
+    font-size:450%;
+    font-family: Impact, Charcoal, sans-serif;                      /* Main Section header name "YUHAO DONG"*/
+}
+
+
+
+
+
